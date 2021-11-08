@@ -25,9 +25,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 2) {
         if (layer_state_is(0)) {
             if (clockwise) {
-                tap_code(KC_WH_D);
-            } else {
                 tap_code(KC_WH_U);
+            } else {
+                tap_code(KC_WH_D);
             }
         }
         if (layer_state_is(1)) {
